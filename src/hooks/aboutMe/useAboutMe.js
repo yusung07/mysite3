@@ -4,16 +4,16 @@ function useAboutMe() {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     const [profileInfo, setProfileInfo] = useState({
-        name: "홍길동",
+        name: "강유성",
         title: "프론트엔드 개발자 지망생",
-        email: "example@email.com",
+        email: "kys01029846332@gmail.com",
         location: "서울시 oo구"
     });
 
     const education = useMemo(() => [
         {
             id: 1,
-            school: "oo 고등학교",
+            school: "근명 고등학교",
             period: "2022 - 현재",
             description: "정보통신 특성화 전공"
         },

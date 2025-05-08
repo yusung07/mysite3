@@ -6,11 +6,12 @@ import Footer from './components/common/Footer';
 //import GaLLeryPage from './pages/gallery/GallertPage';
 //import BlogPage from './pages/blog/BlogPage';
 import AboutMePage from './pages/aboutMe/AboutMePage';
+import Home from './components/home/Home';
 //import MyStoryPage from './pages/MyStory/MyStoryPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/mysite3">
       <div className="App">
         <header className="app-header">
           <Header />  
@@ -18,6 +19,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/home" element={<HomePage />} /> 
             <Route path="/about-me" element={<AboutMePage />} />
          {/*<Route path="/gallery" eLement={<GaLLeryPage />} />
             <Route path="/blog" eLement={<BlogPage />} />
